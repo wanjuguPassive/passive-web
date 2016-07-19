@@ -1,0 +1,57 @@
+#bphoto {
+    width: 100%;
+    height: 300px;
+}
+
+/*====================================*/
+/*BODY*/
+#wrapper {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+}
+
+#footer {
+    height: auto;
+    height: 0px;
+/*    min-height: 320px;*/
+    width: 100%;
+    position: relative;
+    font-size: .7rem;
+}
+
+#Body {
+    overflow: hidden;
+}
+link {
+    display:block;
+}
+
+/*--------------------------------------------------------------*/
+/*PAGE 1*/
+/*--------------------------------------------------------------*/
+#page1 {
+    height: 100vh;
+    width: 100%;
+    min-height: 825px;
+    position: relative;
+}
+
+#bphoto {
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+#pic_cont {
+    margin-top: 250px;
+
+}
+
+.pic_out {
+    width: 600px;
+    height: 300px;
+    background-color: #555;
+}

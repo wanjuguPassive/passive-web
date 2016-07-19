@@ -28,7 +28,7 @@
     <!--Other CSS -->
     <link rel="stylesheet" type="text/css" href="css/base.css">
 
-
+    <link href="/twentytwenty-master/css/twentytwenty.css" rel="stylesheet" type="text/css" />
 
     <!----------------------------------------->
     <!-- Scripts -->
@@ -45,24 +45,23 @@
     <div id="Body" class="expanded row columns">
 
 
-
         <!----------------------------------------------------->
         <!-- PAGE 1 --->
         <!----------------------------------------------------->
         <div id="page1" class="expanded row columns">
 
             <!--- BANNER -->
-            <div id="bphoto" class="expanded row columns bphoto"></div>
+<!--            <div id="bphoto" class="expanded row columns bphoto"></div>-->
 
+            <!--- PIC CONTAINER -->
+            <div id="pic_cont" class="expanded row columns f-center">
 
+                <div id='container1' class='pic_out twentytwenty-container'>
+                  <img src='/assets/model/town1.jpg'>
+                  <img src='/assets/model/sky-5.jpg'>
+                </div>
 
-         </div><!-- page 1 end -->
-
-        <!----------------------------------------------------->
-        <!-- PAGE 2 --->
-        <!----------------------------------------------------->
-        <div id="page2" class="expanded row columns">
-
+            </div>
 
          </div><!-- page 1 end -->
 
@@ -92,6 +91,26 @@
     <!----------------------------------------->
     <!--Vegas-->
     <script type="text/javascript"  src="https://www.dropbox.com/s/01kp5re7w6tsix6/vegas.min.js?raw=1"></script>
+<!--    <script type="text/javascript"  src="js/vegas-scripts.js"></script>-->
+    <script>
+        $("#page1").vegas({
+            slides: [
+//            { src: "https://www.dropbox.com/s/m2mgr30nhw7fbfp/smile.jpg?raw=1" },
+                ],
+                overlay: '/assets/overlays/01.png'
+            });
+    </script>
+
+    <!-------------------------------------->
+    <!-- Twenty Twenty ------->
+    <script src="/twentytwenty-master/js/jquery.event.move.js"></script>
+    <script src="/twentytwenty-master/js/jquery.twentytwenty.js"></script>
+    <script>
+        $(window).load(function(){
+          $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
+          $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
+        });
+    </script>
 
 
 <!---------------------------------------------------------------------->
